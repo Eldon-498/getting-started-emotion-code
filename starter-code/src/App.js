@@ -50,7 +50,17 @@ function App() {
           width: 100px;
         `} 
        />
-      <div>
+      <div
+      css={css`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      @media (max-width: 900px) {
+        display: grid;
+      }
+    `}>
         {hotels.map((hotel) => {
           return (
             <div key={hotel.id}>
