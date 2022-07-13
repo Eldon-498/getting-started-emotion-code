@@ -33,13 +33,23 @@ function App() {
   return (
     <main
     css={{
-      color: "#03045e",
-      background: "#caf0f8",
-      height: "1200px",
-      fontFamily: "helvetica",
+        color: "#03045e",
+        background: "#caf0f8",
+        height: "1200px",
+        fontFamily: "helvetica",
     }}
     >
-      <img src={logo} alt="" />
+      <img
+        src={logo}
+        alt="logo"
+        css={css`
+          display: absolute;
+          margin-top: 15px;
+          margin-left: 15px;
+          height: 100px;
+          width: 100px;
+        `} 
+       />
       <div>
         {hotels.map((hotel) => {
           return (
