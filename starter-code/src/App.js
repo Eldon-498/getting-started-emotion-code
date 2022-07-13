@@ -1,7 +1,13 @@
 import logo from "./logo.png";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { CardWrapper } from "./styles.js";
+import { CardWrapper,
+  ImageWrapper,
+  TextWrapper,
+  TitleWrapper,
+  DescriptionWrapper,
+  ActionsWrapper,
+  Button} from "./styles.js";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
@@ -65,15 +71,15 @@ function App() {
         {hotels.map((hotel) => {
           return (
             <CardWrapper key={hotel.id}>
-              <img src={hotel.src} alt={hotel.alt} />
-              <div>
-                <h2>{hotel.title}</h2>
-                <h3>{hotel.description}</h3>
-              </div>
-              <div>
+              <ImageWrapper src={hotel.src} alt={hotel.alt} />
+              <TextWrapper>
+                <TitleWrapper>{hotel.title}</TitleWrapper>
+                <DescriptionWrapper>{hotel.description}</DescriptionWrapper>
+              </TextWrapper>
+              <ActionsWrapper>
                 <button>Details</button>
                 <button>Book</button>
-              </div>
+              </ActionsWrapper>
             </CardWrapper>
           );
         })}
