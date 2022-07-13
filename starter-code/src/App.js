@@ -1,4 +1,6 @@
 import logo from "./logo.png";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
@@ -29,7 +31,14 @@ const hotels = [
 // Apply styling to code within the `App` component's `return` statement using styled components, theming, animation and the `css` prop
 function App() {
   return (
-    <main>
+    <main
+    css={{
+      color: "#03045e",
+      background: "#caf0f8",
+      height: "1200px",
+      fontFamily: "helvetica",
+    }}
+    >
       <img src={logo} alt="" />
       <div>
         {hotels.map((hotel) => {
