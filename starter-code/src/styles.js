@@ -56,3 +56,12 @@ export const Button = styled.button`
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
   }
 `;
+
+const PrimaryButton = styled(Button)`
+background-color: #03045e;
+color: #caf0f8;
+`;
+ const SecondaryButton = styled(Button)`
+  background-color: #caf0f8;
+  color: #03045e;
+`;

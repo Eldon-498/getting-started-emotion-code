@@ -7,7 +7,9 @@ import { CardWrapper,
   TitleWrapper,
   DescriptionWrapper,
   ActionsWrapper,
-  Button} from "./styles.js";
+  Button,
+  PrimaryButton,
+  SecondaryButton,} from "./styles.js";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
