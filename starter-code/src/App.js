@@ -1,15 +1,17 @@
 import logo from "./logo.png";
 /** @jsxImportSource @emotion/react */
 import { css, ThemeProvider } from "@emotion/react";
-import { CardWrapper,
+import { 
+  CardWrapper,
   ImageWrapper,
   TextWrapper,
   TitleWrapper,
   DescriptionWrapper,
   ActionsWrapper,
-  Button,
   PrimaryButton,
-  SecondaryButton,} from "./styles.js";
+  SecondaryButton,
+  theme,
+  LogoSpin} from "./styles.js";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 // import styled components, theming and animation from "./styles.js" file
 
@@ -53,6 +55,7 @@ function App() {
         src={logo}
         alt="logo"
         css={css`
+          animation: ${LogoSpin} 10s linear infinite;
           display: absolute;
           margin-top: 15px;
           margin-left: 15px;
