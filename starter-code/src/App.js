@@ -79,8 +79,8 @@ function App() {
                 <DescriptionWrapper>{hotel.description}</DescriptionWrapper>
               </TextWrapper>
               <ActionsWrapper>
-                <button>Details</button>
-                <button>Book</button>
+                <PrimaryButton>Details</PrimaryButton>
+                <SecondaryButton>Book</SecondaryButton>
               </ActionsWrapper>
             </CardWrapper>
           );
